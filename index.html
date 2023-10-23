@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <style>
+         .grid-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding:15px;
+            border:dashed;
+            background-color: yellowgreen;
+            grid-template-columns: repeat(autofill,minmax(100px,1fr));
+            
+         }
+
+         
+         @media(max-width:768px){
+            .gird-container{
+                grid-template-columns: repeat(autofill,minmax(50px,1fr));
+                
+            }
+            
+                 
+            
+         }
+         @media(min-width:992px){
+            .grid-container{
+            grid-template-rows: repeat(4,1fr);
+            
+
+
+         }
+         
+        }
+        .grid-item{
+            background-color: lightgray;
+            display: flexbox;
+            padding:20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+            
+            
+        }
+         div>p{
+            background-color: blue;
+            color: black;
+            border: 2px dashed;
+            padding-bottom: 10%;
+            
+        }
+        div>h3{
+            border: dashed;
+            
+        }
+        div>h4{
+            border: dashed;
+        
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Title</h3>
+                <p>Image</p>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente</h4>
+                <a href="link">Read More</a>
+                </div>
+                <div class="grid-item">
+                    <h3>Title</h3>
+                    <p>Image</p>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente</h4>
+                    <a href="link">Read More</a>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Title</h3>
+                        <p>Image</p>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente</h4>
+                        <a href="link">Read More</a>
+                        </div>
+                        <div class="grid-item">
+                            <h3>Title</h3>
+                            <p>Image</p>
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente</h4>
+                            <a href="link">Read More</a>
+            </div>
+            <div class="grid-item">
+                <h3>Title</h3>
+                <p>Image</p>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente</h4>
+                <a href="link">Read More</a>
+</div>
+<div class="grid-item">
+    <h3>Title</h3>
+    <p>Image</p>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente</h4>
+    <a href="link">Read More</a>
+</div>
+        </div>
+    </body>
+</html>
